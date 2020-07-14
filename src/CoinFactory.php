@@ -1,5 +1,6 @@
 <?php
 namespace Guru86\LaravelRandomDisplay;
+//version 1.1
 class CoinFactory
 {
 
@@ -30,6 +31,12 @@ class CoinFactory
 	public function getRandomWord(){
 
 		//dd($this->words);
+
+		return $this->words[array_rand($this->words)];
+	}
+	public function getRandomWords(){
+
+		//Implementation
 
 		return $this->words[array_rand($this->words)];
 	}
